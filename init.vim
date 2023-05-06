@@ -29,6 +29,7 @@ Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'https://github.com/preservim/nerdtree'
 Plug 'https://github.com/tpope/vim-surround'
 Plug 'https://github.com/preservim/tagbar'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
