@@ -23,6 +23,9 @@ map <F7> :NERDTree<CR>
 
 call plug#begin()
 
+Plug 'nvim-tree/nvim-web-devicons'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', {'rev': '0.1.8'}
 Plug 'https://github.com/sainnhe/everforest'
 Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'https://github.com/preservim/nerdtree'
@@ -30,8 +33,15 @@ Plug 'https://github.com/tpope/vim-surround'
 Plug 'https://github.com/preservim/tagbar'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ryanoasis/vim-devicons'
+Plug 'dart-lang/dart-vim-plugin'
 
 call plug#end()
+
+
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 
 colorscheme everforest
